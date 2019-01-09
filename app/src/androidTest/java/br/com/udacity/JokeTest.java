@@ -26,7 +26,7 @@ public class JokeTest {
 
     @Test
     public void checkItemRecipeList() {
-        onView(withId(R.id.button_joke)).perform(click());
+        onView(withId(R.id.button_joke_gce)).perform(click());
         onView(withId(R.id.tv_joke)).check(matches(withText("Hi, Manfred")));
     }
 

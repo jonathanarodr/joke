@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view) {
+    public void tellGCEJoke(View view) {
         EndpointsAsyncTask task = new EndpointsAsyncTask();
         task.execute(new Pair<Context, String>(this, "Manfred"));
     }
 
-    public void tellGCEJoke(View view) {
+    public void tellJoke(View view) {
         Toast.makeText(this, new JavaJoke().getJoke(), Toast.LENGTH_SHORT).show();
     }
 
